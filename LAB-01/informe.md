@@ -3,9 +3,9 @@
 **Materia:** Gestión de Seguridad y Desempeño de Bases de Datos  
 **Unidad:** II — Seguridad, privacidad y control de acceso  
 **Tema:** 2.3 — Datos sensibles, privacidad y protección de la información  
-**Estudiante:** [Sebastian Ramirez Alvarez]  
-**Fecha:** [Escribir fecha de entrega]  
-**Motor utilizado:** PostgreSQL 15.19 (versión del servidor disponible durante la práctica)
+**Estudiante:** Sebastian Ramirez Alvarez  
+**Fecha:** 17/10/26  
+**Motor utilizado:** PostgreSQL 15.19 
 
 ## Introducción
 
