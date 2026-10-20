@@ -11,7 +11,7 @@
 
 En este laboratorio trabajé con una base de datos de clientes de una empresa ficticia para aplicar diferentes técnicas de protección de información. El objetivo fue permitir que distintas áreas consulten solamente los datos que necesitan, sin exponer información personal de manera innecesaria.
 
-La práctica incluyó clasificación de datos, enmascaramiento, seudonimización, separación de funciones, consultas agregadas y una política básica de retención. Se utilizaron cinco registros ficticios en PostgreSQL. Aunque las instrucciones mencionan PostgreSQL 16, el servidor compartido donde realicé las pruebas utiliza PostgreSQL 15.19.
+La práctica incluyó clasificación de datos, enmascaramiento, seudonimización, separación de funciones, consultas agregadas y una política básica de retención. Se utilizaron cinco registros ficticios en PostgreSQL. Aunque las instrucciones mencionan PostgreSQL 16, el servidor compartido donde realicé las pruebas 
 
 ## 19.1 Clasificación de datos
 
