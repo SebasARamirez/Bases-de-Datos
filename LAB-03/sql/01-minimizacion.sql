@@ -1,6 +1,5 @@
 
 -- LAB-03 - Actividad 2: Principio de minimización
--- Base de datos: lab03_privacidad
 
 -- 1. Crear una tabla con los datos necesarios para soporte
 CREATE TABLE clientes_soporte (
