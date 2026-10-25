@@ -1,6 +1,5 @@
 
 -- LAB-03 - Actividad 3: Separación por finalidad
--- Base de datos: lab03_privacidad
 
 -- 1. Consultar la cantidad de clientes por ciudad
 SELECT
