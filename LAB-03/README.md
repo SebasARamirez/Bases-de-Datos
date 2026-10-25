@@ -598,24 +598,3 @@ También debería identificar cómo realizar una consulta, actualización o elim
 **Propietario de los datos:** Definir las necesidades de uso de la información y participar en las decisiones sobre su finalidad, acceso y conservación.
 
 Estas áreas deben trabajar juntas para garantizar que la información se utilice de manera adecuada y segura.
-
----
-
-## 12. Archivos del laboratorio
-
-El laboratorio incluye los siguientes archivos SQL:
-
-- [01-minimizacion.sql](sql/01-minimizacion.sql)
-- [02-finalidad.sql](sql/02-finalidad.sql)
-- [03-control-acceso.sql](sql/03-control-acceso.sql)
-
-Y los siguientes documentos de evidencia:
-
-- [01-inventario-datos.md](evidencias/01-inventario-datos.md)
-- [05-finalidad-secundaria.md](evidencias/05-finalidad-secundaria.md)
-- [08-ciclo-vida.md](evidencias/08-ciclo-vida.md)
-- [10-retencion.md](evidencias/10-retencion.md)
-- [11-gobierno-datos.md](evidencias/11-gobierno-datos.md)
-- [12-privacidad-diseno.md](evidencias/12-privacidad-diseno.md)
-- [14-evaluacion-integral.md](evidencias/14-evaluacion-integral.md)
-- [15-arquitectura.md](evidencias/15-arquitectura.md)
