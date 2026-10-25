@@ -1,6 +1,5 @@
 
 -- LAB-03 - Actividad 4: Control de acceso
--- Base de datos: lab03_privacidad
 
 -- 1. Crear un rol para analítica
 CREATE ROLE analista NOLOGIN;
