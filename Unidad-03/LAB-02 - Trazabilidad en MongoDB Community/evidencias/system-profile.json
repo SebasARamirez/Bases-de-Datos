@@ -1,0 +1,479 @@
+﻿[
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 1
+      },
+      "u": {
+        "$set": {
+          "telefono": "6670000000"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": 1,
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": 1,
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "storage": {},
+    "cpuNanos": 287742,
+    "millis": 0,
+    "planSummary": "IDHACK",
+    "planningTimeMicros": 45,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 2,
+      "advanced": 0,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 1,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "IDHACK",
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 1,
+        "keysExamined": 1,
+        "docsExamined": 1
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T04:29:30.756Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "insert",
+    "ns": "comercial.clientes",
+    "command": {
+      "insert": "clientes",
+      "documents": [
+        {
+          "nombre": "Cliente de prueba",
+          "correo": "lab02-prueba@example.test",
+          "telefono": "6679999999",
+          "rfc": "TEST000000XXX",
+          "edad": 30,
+          "ciudad": "Culiac├ín",
+          "codigo_postal": "80000",
+          "_id": {
+            "$oid": "6af011014d7cab537053c673"
+          }
+        }
+      ],
+      "ordered": true,
+      "lsid": {
+        "id": {
+          "$binary": {
+            "base64": "/iW0C9CnSgKOBdT2cgQEyA==",
+            "subType": "04"
+          }
+        }
+      },
+      "$db": "comercial"
+    },
+    "ninserted": 1,
+    "keysInserted": 1,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "responseLength": 45,
+    "protocol": "op_msg",
+    "cpuNanos": 744807,
+    "millis": 0,
+    "ts": {
+      "$date": "2026-11-08T06:04:49.992Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {
+      "find": "clientes",
+      "filter": {
+        "correo": "lab02-prueba@example.test"
+      },
+      "lsid": {
+        "id": {
+          "$binary": {
+            "base64": "/iW0C9CnSgKOBdT2cgQEyA==",
+            "subType": "04"
+          }
+        }
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 1,
+    "queryHash": "FE4123CA",
+    "planCacheKey": "FE4123CA",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": 1
+        }
+      }
+    },
+    "flowControl": {},
+    "responseLength": 305,
+    "protocol": "op_msg",
+    "cpuNanos": 169044,
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 95,
+    "execStats": {
+      "stage": "COLLSCAN",
+      "filter": {
+        "correo": {
+          "$eq": "lab02-prueba@example.test"
+        }
+      },
+      "nReturned": 1,
+      "executionTimeMillisEstimate": 0,
+      "works": 6,
+      "advanced": 1,
+      "needTime": 4,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "direction": "forward",
+      "docsExamined": 5
+    },
+    "ts": {
+      "$date": "2026-11-08T06:04:54.107Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "correo": "lab02-prueba@example.test"
+      },
+      "u": {
+        "$set": {
+          "telefono": "6678888888"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "cpuNanos": 226098,
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 74,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 6,
+      "advanced": 0,
+      "needTime": 5,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 1,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "correo": {
+            "$eq": "lab02-prueba@example.test"
+          }
+        },
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 5,
+        "advanced": 1,
+        "needTime": 4,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 0,
+        "direction": "forward",
+        "docsExamined": 5
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T06:04:58.803Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "remove",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "correo": "lab02-prueba@example.test"
+      },
+      "limit": 1
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "ndeleted": 1,
+    "keysDeleted": 1,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "cpuNanos": 180938,
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 80,
+    "execStats": {
+      "stage": "DELETE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 6,
+      "advanced": 0,
+      "needTime": 5,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nWouldDelete": 1,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "correo": {
+            "$eq": "lab02-prueba@example.test"
+          }
+        },
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 5,
+        "advanced": 1,
+        "needTime": 4,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 0,
+        "direction": "forward",
+        "docsExamined": 5
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T06:05:03.641Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  }
+]

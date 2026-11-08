@@ -1,0 +1,294 @@
+[
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {
+      "find": "clientes",
+      "filter": {
+        "ciudad": "Culiacán"
+      },
+      "projection": {
+        "nombre": 1,
+        "ciudad": 1
+      },
+      "lsid": {
+        "id": {
+          "$binary": {
+            "base64": "3avg/+0mTXWqctMmZk4ozQ==",
+            "subType": "04"
+          }
+        }
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 3,
+    "queryHash": "1E7833C6",
+    "planCacheKey": "1E7833C6",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": 1
+        }
+      }
+    },
+    "flowControl": {},
+    "responseLength": 300,
+    "protocol": "op_msg",
+    "cpuNanos": 2166422,
+    "millis": 2,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 1003,
+    "execStats": {
+      "stage": "PROJECTION_SIMPLE",
+      "nReturned": 3,
+      "executionTimeMillisEstimate": 0,
+      "works": 6,
+      "advanced": 3,
+      "needTime": 2,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "transformBy": {},
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "ciudad": {
+            "$eq": "Culiacán"
+          }
+        },
+        "nReturned": 3,
+        "executionTimeMillisEstimate": 0,
+        "works": 6,
+        "advanced": 3,
+        "needTime": 2,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 5
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T04:16:40.293Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 3
+      },
+      "u": {
+        "$set": {
+          "rfc": "GAMA780912XYZ"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "cpuNanos": 422186,
+    "millis": 0,
+    "planSummary": "IDHACK",
+    "planningTimeMicros": 108,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 2,
+      "advanced": 0,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 1,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "IDHACK",
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 1,
+        "keysExamined": 1,
+        "docsExamined": 1
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T04:16:50.959Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "remove",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 2
+      },
+      "limit": 1
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "ndeleted": 1,
+    "keysDeleted": 1,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": 1
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": 1
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": 1
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": 1
+    },
+    "cpuNanos": 278887,
+    "millis": 0,
+    "planSummary": "IDHACK",
+    "planningTimeMicros": 149,
+    "execStats": {
+      "stage": "DELETE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 2,
+      "advanced": 0,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nWouldDelete": 1,
+      "inputStage": {
+        "stage": "IDHACK",
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 1,
+        "keysExamined": 1,
+        "docsExamined": 1
+      }
+    },
+    "ts": {
+      "$date": "2026-11-08T04:16:56.805Z"
+    },
+    "client": "172.17.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  }
+]
